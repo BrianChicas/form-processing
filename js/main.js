@@ -16,3 +16,25 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+// Title case for loop START
+function titleCase(str) {
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++) {
+      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+    }
+    return str.join(' ');
+  }
+// Title case for loop END
+/*
+function titleCase(str){
+  str = str.split(" ");
+
+  for(let x = 0; x < str.length;x++){
+    str[x] = str[x].charAt(0).toUpperCase() + str[x].slice(1).toLowerCase();
+  }
+  return str.join(" ");
+}
+
+
+*/
